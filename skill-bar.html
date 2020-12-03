@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>skill-bar</title>
+	<meta charset="utf-8">
+   
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style type="text/css">
+
+
+
+    .skill-bar
+    {
+    	height: 600px;
+    	width:100%;
+      color: black;
+      
+      
+   
+
+    }
+    .skill-box
+    {
+    	position: absolute;
+    	top: 40%;
+    	left:40%;
+    	transform:translate(-50%, -50%);
+    	height:400px;
+    	width:800px;
+    	background:transparent;
+    	border-bottom:2px solid black;
+    	border-left: 2px solid #000;
+    	display:flex;   
+
+    }
+    .skill
+    {
+        position:relative;
+        flex:1;
+        text-align: center;
+        color: black;
+     }
+     .graph
+     {
+     	position:absolute;
+     	width:60px;
+     	background:rgba(0,0,0,1);
+     	bottom:0;
+     	left:50%;
+     	transform:translate(-50%); 
+     	   
+     }
+      .graph:before
+      {
+      	content: '';
+      	position: absolute;
+      	top:2px;
+      	left: 2px;
+      	right: 2px;
+      	bottom:0;
+      	background: linear-gradient(0deg,#003ba5, #009ffe); 
+      }
+      
+      .graph:after
+      {
+      	content: '';
+      	position: absolute;
+      	top:2px;
+      	left: 2px;
+      	height:100%;
+    	width:50%;
+      	background:rgba(255,255,255,.1); 
+      }
+      .graph .percent
+      {
+      	
+      	position: absolute;
+      	top:-20px;
+      	left:50%;
+      	transform:translateX(-50%); 
+      	text-align:center;
+      	color:black;
+      	font-weight:bold;   
+      	
+      }
+      .name
+      {
+      	position: absolute;
+      	bottom: -30px;
+      	left: 50%;
+      	transform: translateX(-50%);
+      	text-align: center;
+      	color:black;
+      	
+
+      }
+      
+
+
+
+
+
+    
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+
+<section>
+  <h1 style="text-align: center;">SKILL BAR</h1>
+
+
+    <div class="skill-bar">
+	<div class="skill-box">
+
+
+		<div class="skill">
+			<div class="graph" style="height:85% ">
+				<div class="percent">85%</div>
+			</div>
+			<div class="name">HTML</div>
+		</div>
+	
+
+	
+		<div class="skill">
+			<div class="graph" style="height:70%">
+				<div class="percent">70%</div>
+			</div>
+			<div class="name">CSS</div>
+		</div>
+	 
+
+
+	
+		<div class="skill">
+			<div class="graph"style="height:60%">
+				<div class="percent">60%</div>
+			</div>
+			<div class="name">JS</div>
+		</div>
+	 
+
+
+	
+		<div class="skill">
+			<div class="graph"style="height:65%">
+				<div class="percent">65%</div>
+			</div>
+			<div class="name">PHP</div>
+		</div>
+	
+
+
+	
+		<div class="skill">
+			<div class="graph"style="height:67% ">
+				<div class="percent">67%</div>
+			</div>
+			<div class="name">MYSQL</div>
+		</div>
+	
+
+
+	
+		<div class="skill">
+			<div class="graph"style="height:60%">
+				<div class="percent">60%</div>
+			</div>
+			<div class="name">DATABASE</div>
+		</div>
+	</div>
+
+ 
+
+</script>
+
+
+</section>
+
+
+
+</body>
+</html>
